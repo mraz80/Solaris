@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Main page */
+.main {
+  height: 100%;
+  display: grid;
+  background-color: #131138;
+  /* display: none; */
+  grid-template-rows: 1fr 5fr;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 32px;
+  h1 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 42px;
+  }
+
+  p {
+    color: rgba(255, 205, 56, 1);
+    font-size: 32px;
+    letter-spacing: 8px;
+  }
+}
+.allplanets {
+  display: flex;
+  height: 100%;
+  /* padding: 1rem; */
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.Sol {
+  background-color: #ffe029;
+
+  width: 10vw;
+  height: 35vw;
+
+  border-radius: 50%;
+  position: relative;
+  left: -7vw;
+}
+
+.Merkurius {
+  height: 15px;
+  width: 15px;
+  background-color: #8d8b85;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.Venus {
+  height: 30px;
+  width: 30px;
+  background-color: #e7cdcc;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.Jorden {
+  height: 30px;
+  width: 30px;
+  background-color: #418ed5;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.Mars {
+  height: 15px;
+  width: 15px;
+  background-color: #ef5f5f;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.Jupiter {
+  height: 120px;
+  width: 120px;
+  background-color: #e29468;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.Saturnus {
+  height: 75px;
+  width: 75px;
+  background-color: #c7aa72;
+  border-radius: 50%;
+  display: inline-block;
+}
+.Uranus {
+  height: 50px;
+  width: 50px;
+  background-color: #cad4f1;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.Neptunus {
+  height: 50px;
+  width: 50px;
+  background-color: #7b91a7;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.Sol:hover {
+  box-shadow: 0 0 8px 8px rgb(250, 177, 177);
+  transition: box-shadow 0.5s ease;
+}
+
+.Merkurius:hover {
+  box-shadow: 0 0 8px 8px rgb(250, 177, 177);
+  transition: box-shadow 0.5s ease;
+}
+
+.Venus:hover {
+  box-shadow: 0 0 8px 8px rgb(250, 177, 177);
+  transition: box-shadow 0.5s ease;
+}
+
+.Jorden:hover {
+  box-shadow: 0 0 8px 8px rgb(250, 177, 177);
+  transition: box-shadow 0.5s ease;
+}
+
+.Mars:hover {
+  box-shadow: 0 0 8px 8px rgb(250, 177, 177);
+  transition: box-shadow 0.5s ease;
+}
+
+.Jupiter:hover {
+  box-shadow: 0 0 8px 8px rgb(250, 177, 177);
+  transition: box-shadow 0.5s ease;
+}
+
+.Saturnus:hover {
+  box-shadow: 0 0 8px 8px rgb(250, 177, 177);
+  transition: box-shadow 0.5s ease;
+}
+
+.Uranus:hover {
+  box-shadow: 0 0 8px 8px rgb(250, 177, 177);
+  transition: box-shadow 0.5s ease;
+}
+.Neptunus:hover {
+  box-shadow: 0 0 8px 8px rgb(250, 177, 177);
+  transition: box-shadow 0.5s ease;
+}
+
+/* Second Page*/
+
+.info {
+  display: none;
+  height: 100%;
+  padding: 1rem;
+  align-items: center;
+  justify-content: start;
+  overflow: hidden;
+  background-color: #131138;
+}
+
+.Sol_planet {
+  border-radius: 50%;
+  position: relative;
+  left: -12vw;
+  min-width: 15vw;
+  height: 40vw;
+  background-color: gold;
+}
+
+.huvudInfo {
+  p {
+    color: rgb(246, 244, 244);
+  }
+
+  .title {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.166);
+
+    h1 {
+      color: rgb(243, 240, 240);
+      margin-bottom: 1rem;
+    }
+    h4 {
+      color: rgba(255, 205, 56, 1);
+      letter-spacing: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.5rem;
+      color: rgb(243, 240, 240);
+    }
+  }
+
+  .demensions {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.166);
+    h4 {
+      color: rgb(247, 238, 238);
+      margin-top: 1rem;
+    }
+    p {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      color: rgb(243, 240, 240);
+    }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "area1 area2"
+      "area3 area4";
+  }
+
+  .close {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    margin: 8px 0;
+  }
+  .close:hover {
+    background-color: rgb(201, 197, 197);
+    cursor: pointer;
+  }
+}
+
+.star {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: rgb(246, 243, 243);
+  border-radius: 50%;
+  box-shadow: 0 0 5px white;
+}

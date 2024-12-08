@@ -3,28 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+    <title>Projekt Solaris</title>
   </head>
   <body>
-    <p>in the name of Allah</p>
-    <button class="setitem">setItem</button>
-    <button class="getitem">getItem</button>
-    <button class="removeitem">removeItem</button>
-    <button class="clear">Clear</button>
-    <!--<img src="solaris.png" style="width: auto; height: auto" />-->
-    <p>in the name of Allah</p>
-    <button class="Solen">Solen</button>
-    <button class="Merkurius">Merkurius</button>
- ">Neptunus</button>
-       <button class="Venus">Venus</button>
-    <button class="Jorden">Jorden</button>
-    <button class="Mars">Mars</button>
-    <button class="Jupiter">Jupiter</button>
-    <button class="Saturnus">Saturnus</button>
-    <button class="Uranus">Uranus/button>
-  
+    <div class="main">
+      <div class="heading">
+        <h1>Solsystem</h1>
+        <p>Solaris</p>
+      </div>
+      <div class="allplanets">
+        <div class="Sol"></div>
+        <div class="Merkurius"></div>
+        <div class="Venus"></div>
+        <div class="Jorden"></div>
+        <div class="Mars"></div>
+        <div class="Jupiter"></div>
+        <div class="Saturnus"></div>
+        <div class="Uranus"></div>
+        <div class="Neptunus"></div>
+      </div>
+    </div>
+    <div class="info">
+      
+          <div class="Sol_planet"></div>
 
-    <script src="test.js" type="module"></script>
-    <!--<script src="localstorage.js"></script>-->
+          <div class="huvudInfo">
+
+            
+                                     <div class="title">
+                                        <h4 id="Name"></h4>
+                                        <h4 id="latinName"></h4>
+                                        <p id="Desc" style="overflow-y: auto"></p>
+                                      </div>
+      <div class="demensions">
+                              <div class="Info-circumference">
+                                 <h4>Circumference</h4>
+                                  <p id="Circumference"></p>
+                                  </div>
+        <div class="Info-km">
+          <h4>km from the Sun</h4>
+          <p id="Distance"></p>
+        </div>
+                                      <div class="Info_maxtemp">
+                                        <h4>max temperature</h4>
+                                        <p id="maxTemp"></p>
+                                      </div>
+
+                          <div class="Info_mintemp">
+                            <h4>min temperature </h4>
+                            <p id="minTemp"></p>
+                              </div>
+      </div>
+      
+      <button class="close" id="close">Back</button>
+    </div>
+
+    <script src="api.js" defer></script>
+   
   </body>
 </html>
